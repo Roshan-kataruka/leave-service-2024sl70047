@@ -30,7 +30,7 @@ pipeline {
                     )
                 ]) {
                     sh '''
-                    mvn sonar:sonar \
+                    mvn org.sonarsource.scanner.maven:sonar-maven-plugin:5.0.0.4389:sonar \
                     -Dsonar.projectKey=leave-service-2024sl70047 \
                     -Dsonar.projectName=Employee-Leave-Service \
                     -Dsonar.host.url=http://localhost:9000 \
